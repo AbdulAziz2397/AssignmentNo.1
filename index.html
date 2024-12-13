@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, rgb(22, 22, 22), rgb(31, 7, 31));
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 36px;
+            color: white;
+            margin: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 20px 40px;
+            background-color: rgb(79, 79, 79);
+            display: inline-block;
+            transition: 0.4s ease;
+        }
+
+        a:hover {
+            color: black;
+            background-color: white;
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        @media (max-width: 600px) {
+            a {
+                font-size: 28px;
+                padding: 15px 30px;
+            }
+
+            ul {
+                flex-direction: row;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="PT.html">PERIODIC TABLE</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="form.html">FORM</a></li>
+    </ul>
+</body>
+
+</html>

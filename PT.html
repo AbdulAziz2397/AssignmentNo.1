@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(22, 22, 22), rgb(31, 7, 31));
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        .change{
+            border-radius: 10px;
+            color: rgb(207, 207, 207);
+        }
+        .change:hover{
+            transform: scale(1.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table  align="center">
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>1</sup>H</td>
+            <td width="50px" font-color="white" height="50px" align="center" colspan="16" class="no-change"></td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#cd1e5e"><sup>2</sup>He</td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#244d57"><sup>3</sup>Li</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#622e39"><sup>4</sup>Be</td>
+            <td width="50px" font-color="white" height="50px" align="center" colspan="10" class="no-change"></td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#523e1b"><sup>5</sup>B</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>6</sup>C</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>7</sup>N</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>8</sup>O</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>9</sup>F</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#cd1e5e"><sup>10</sup>Ne</td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#244d57"><sup>11</sup>Na</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#622e39"><sup>12</sup>Mg</td>
+            <td width="50px" font-color="white" height="50px" align="center" colspan="10" class="no-change"></td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>13</sup>Al</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#523e1b"><sup>14</sup>Si</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>15</sup>P</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>16</sup>S</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>17</sup>Cl</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#cd1e5e"><sup>18</sup>Ar </td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#244d57"><sup>19</sup>K</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#622e39"><sup>20</sup>Ca</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>21</sup>Sc</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>22</sup>Ti</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>23</sup>V</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>24</sup>Cr</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>25</sup>Mn</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>26</sup>Fe</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>27</sup>Co</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>28</sup>Ni</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>29</sup>Cu</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>30</sup>Zn</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>31</sup>Ga</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#523e1b"><sup>32</sup>Ge</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#523e1b"><sup>33</sup>As</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>34</sup>Se</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>35</sup>Br</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#cd1e5e"><sup>36</sup>Kr</td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#244d57"><sup>37</sup>Rb</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#622e39"><sup>38</sup>Sr</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>39</sup>Y</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>40</sup>Zr</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>41</sup>Nb</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>42</sup>Mo</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>43</sup>Tc</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>44</sup>Ru</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>45</sup>Rh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>46</sup>Pd</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>47</sup>Ag</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>48</sup>Cd</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>49</sup>In</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>50</sup>Sn</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#523e1b"><sup>51</sup>Sb</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#523e1b"><sup>52</sup>Te</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#2a4165"><sup>53</sup>I</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#cd1e5e"><sup>54</sup>Xe</td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#244d57"><sup>55</sup>Cs</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#622e39"><sup>56</sup>Ba</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>57</sup>La</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>72</sup>Hf</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>73</sup>Ta</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>74</sup>W</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>75</sup>Re</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>76</sup>Os</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>77</sup>Ii</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>78</sup>Pt</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>79</sup>Au</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>80</sup>Hg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>81</sup>Ti</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>82</sup>Pb</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>83</sup>Bi</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>84</sup>Po</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>85</sup>At</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#cd1e5e"><sup>86</sup>Rn</td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#244d57"><sup>87</sup>Fr</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#622e39"><sup>88</sup>Ra</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>89</sup>Ac</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>104</sup>Rf</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>105</sup>Db</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>106</sup>Sg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>107</sup>Bh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#433c65"><sup>108</sup>Hs</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>109</sup>Mt</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>110</sup>Ds</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>111</sup>Rg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>112</sup>Cn</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>113</sup>Nh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>114</sup>Fi</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>115</sup>Mc</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>116</sup>Lv</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>117</sup>Ts</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#46474c"><sup>118</sup>Og</td>
+        </tr>
+<tr>
+    <td width="50px" font-color="white"  align="center" colspan="18" height="20px" class="no-change"></td>
+</tr>
+        <tr>
+            <td width="50px" font-color="white" height="50px" align="center" colspan="3" rowspan="2" class="no-change"></td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>58</sup>Rf</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>59</sup>Db</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>60</sup>Sg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>61</sup>Bh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>62</sup>Hs</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>63</sup>Mt</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>64</sup>Ds</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>65</sup>Rg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>66</sup>Cn</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>67</sup>Nh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>68</sup>Fi</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>69</sup>Mc</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>70</sup>Lv</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#004a77"><sup>71</sup>Ts</td>
+            <td width="50px" font-color="white" height="50px" align="center" rowspan="2" class="no-change"></td>
+        </tr>
+        <tr>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>90</sup>Rf</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>91</sup>Db</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>92</sup>Sg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>93</sup>Bh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>94</sup>Hs</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>95</sup>Mt</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>96</sup>Ds</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>97</sup>Rg</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>98</sup>Cn</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>99</sup>Nh</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>100</sup>Fi</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>101</sup>Fi</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>102</sup>Mc</td>
+            <td class="change" width="50px" font-color="white" height="50px" align="center" bgcolor="#613b28"><sup>103</sup>Lv</td>
+        </tr>
+    </table>
+</body>
+
+</html>

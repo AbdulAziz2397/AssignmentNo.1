@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgb(22, 22, 22), rgb(31, 7, 31));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 60%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row.radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-row.checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .form-row.checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-row.checkbox-group label {
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                width: 80%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Register Now..!</h1>
+        <form action="#">
+            <div class="form-row">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address">
+            </div>
+
+            <div class="form-row">
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile Number">
+            </div>
+
+            <div class="form-row radio-group">
+                <label>Gender:</label>
+                <label for="male"><input type="radio" id="male" name="gender"> Male</label>
+                <label for="female"><input type="radio" id="female" name="gender"> Female</label>
+            </div>
+
+            <div class="form-row">
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-row">
+                <label for="address">Full Address:</label>
+                <textarea id="address" name="address" placeholder="Enter Your Address"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="city">Select Your City:</label>
+                <select id="city" name="city">
+                    <option value="Karachi">Karachi</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Multan">Multan</option>
+                    <option value="Murr">Murr</option>
+                    <option value="Naran">Naran</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="qualification">Qualification:</label>
+                <select id="qualification" name="qualification">
+                    <option value="Matriculation">Matriculation</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Post-Graduation">Post-Graduation</option>
+                </select>
+            </div>
+
+            <div class="form-row checkbox-group">
+                <label>Specialization:</label>
+                <label for="cs"><input type="checkbox" id="cs" name="specialization"> Computer Science</label>
+                <label for="it"><input type="checkbox" id="it" name="specialization"> Information Technology</label>
+                <label for="ca"><input type="checkbox" id="ca" name="specialization"> Computer Architecture</label>
+                <label for="tc"><input type="checkbox" id="tc" name="specialization"> Telecommunication</label>
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

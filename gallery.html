@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body{
+            background: linear-gradient(rgb(22, 22, 22), rgb(31, 7, 31));
+        }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 40px 20px;
+      }
+
+
+      .heading {
+        font-size: 3em;
+        width: 600px;
+        font-weight: bolder;
+        color: white;
+        border-bottom: 5px solid white;
+        margin-bottom: 100px;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+
+      .image-col {
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+      }
+
+
+      .image-col img {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .image-col img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .box {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-col {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+
+      }
+      .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+      button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 12px 24px;
+            font-weight: bolder;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+
+        button:active {
+            background-color: #388e3c;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h3>IMAGE GALLERY</h3>
+      </div>
+      <div class="box">
+        <div class="image-col">
+          <img src="Images/1.jpg" alt="Image 1" />
+          <img src="Images/2.jpg" alt="Image 2" />
+          <img src="Images/3.jpg" alt="Image 3" />
+          <img src="Images/4.jpg" alt="Image 4" />
+        </div>
+        <div class="image-col">
+          <img src="Images/5.jpg" alt="Image 5" />
+          <img src="Images/16.jpg" alt="Image 6" />
+          <img src="Images/6.jpg" alt="Image 7" />
+          <img src="Images/8.jpg" alt="Image 8" />
+        </div>
+        <div class="image-col">
+          <img src="Images/9.jpg" alt="Image 9" />
+          <img src="Images/14.jpg" alt="Image 10" />
+          <img src="Images/10.jpg" alt="Image 11" />
+          <img src="Images/15.jpg" alt="Image 12" />
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+        <button type="button">MORE</button>
+    </div>
+  </body>
+</html>
